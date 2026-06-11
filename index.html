@@ -50,14 +50,7 @@ nav a:hover{
     padding:20px;
 }
 
-.hero img{
-    width:140px;
-    height:140px;
-    border-radius:50%;
-    border:3px solid gold;
-}
-
-.hero h1{
+.hero-content h1{
     font-size:2.5rem;
     margin-top:15px;
 }
@@ -378,6 +371,22 @@ h2{
     font-size:0.9rem;
 }
 
+.download-btn{
+    display:inline-block;
+    background:gold;
+    color:#0b1220;
+    padding:10px 20px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    margin:10px 0;
+    transition:background 0.3s;
+}
+
+.download-btn:hover{
+    background:#fff;
+}
+
 footer{
     text-align:center;
     padding:30px;
@@ -401,8 +410,7 @@ footer{
 </nav>
 
 <div class="hero">
-<div>
-<img src="profile.jpg" alt="Profile Photo">
+<div class="hero-content">
 <h1>Chua Cheng Yi Shane</h1>
 <p>Accountancy / Banking & Finance Applicant</p>
 <div class="badge">EAE Portfolio</div>
@@ -620,6 +628,7 @@ inventory management, market dynamics, pricing strategy, and profit optimization
 This section provides detailed analytics and insights into sales performance, revenue metrics, ROI calculations, and transaction logs. 
 Each metric has been carefully tracked and analyzed to demonstrate business acumen, financial management capabilities, and data-driven decision making.
 </p>
+<a href="Blox_Fruit_Business_Analytics_Complete.csv" class="download-btn" download>📥 Download Full Transaction Data (CSV)</a>
 </div>
 
 <!-- Sales Performance Metrics -->
