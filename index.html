@@ -107,6 +107,47 @@ h2{
     margin:10px 0;
 }
 
+.award-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    margin-top:30px;
+}
+
+.award-card{
+    background:#121a2e;
+    border-radius:12px;
+    overflow:hidden;
+    border:2px solid gold;
+    transition:transform 0.3s;
+}
+
+.award-card:hover{
+    transform:translateY(-5px);
+}
+
+.award-card img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+}
+
+.award-info{
+    padding:20px;
+}
+
+.award-info h3{
+    color:gold;
+    margin:10px 0;
+    font-size:1.2rem;
+}
+
+.award-info p{
+    margin:8px 0;
+    font-size:0.95rem;
+    color:#bbb;
+}
+
 footer{
     text-align:center;
     padding:30px;
@@ -124,6 +165,7 @@ footer{
 <a href="#leadership">Leadership</a>
 <a href="#cca">CCA</a>
 <a href="#service">Service</a>
+<a href="#achievements">Achievements</a>
 </nav>
 
 <div class="hero">
@@ -203,6 +245,35 @@ Over 50 VIA hours including:
 <li>Organising activities for elderly</li>
 <li>School VIA events</li>
 </ul>
+</div>
+</section>
+
+<section id="achievements">
+<h2>Awards & Recognition</h2>
+<div class="award-container">
+
+<div class="award-card">
+<img src="IMG_1871.jpeg" alt="SYF Distinction Certificate">
+<div class="award-info">
+<h3>🏆 SYF Distinction 2025</h3>
+<p><strong>Award:</strong> Certificate of Distinction</p>
+<p><strong>Category:</strong> Chinese Ensemble - Percussion</p>
+<p><strong>Event:</strong> Singapore Youth Festival 2025 Arts Presentation</p>
+<p>Recognized for excellence in percussion performance during the Singapore Youth Festival.</p>
+</div>
+</div>
+
+<div class="award-card">
+<img src="IMG_1872.jpeg" alt="Most Improved Student Award">
+<div class="award-info">
+<h3>🥇 Most Improved Student 2026</h3>
+<p><strong>Award:</strong> Term 1 Most Improved</p>
+<p><strong>Class:</strong> S4-J</p>
+<p><strong>School:</strong> Mayflower Secondary School</p>
+<p>Awarded for significant academic and personal improvement during Term 1, 2026.</p>
+</div>
+</div>
+
 </div>
 </section>
 
