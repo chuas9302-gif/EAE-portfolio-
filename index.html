@@ -280,10 +280,6 @@ h2{
 }
 
 /* Sales & Data Analytics Styles */
-.sales-analytics-container{
-    margin:30px 0;
-}
-
 .sales-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -328,45 +324,58 @@ h2{
     margin-top:3px;
 }
 
-/* Transaction Log Styles */
-.transaction-log{
-    background:#121a2e;
-    border-radius:12px;
-    padding:20px;
-    margin:30px 0;
+/* Skills & Impact Grid */
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+    margin:20px 0;
 }
 
-.log-entry{
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
-    gap:15px;
-    padding:12px;
-    margin:8px 0;
+.skill-item{
     background:#1a2845;
-    border-radius:8px;
+    padding:15px;
+    border-radius:10px;
     border-left:3px solid gold;
 }
 
-.log-entry-item{
+.skill-item h4{
+    color:gold;
+    margin:0 0 8px 0;
     font-size:0.85rem;
-}
-
-.log-entry-label{
-    color:#888;
-    font-size:0.75rem;
     text-transform:uppercase;
+    letter-spacing:0.5px;
 }
 
-.log-entry-value{
-    color:#fff;
-    font-weight:600;
-    margin-top:3px;
+.skill-item p{
+    margin:0;
+    font-size:0.9rem;
+    color:#bbb;
+    line-height:1.4;
 }
 
-@media(max-width:768px){
-    .log-entry{
-        grid-template-columns:1fr 1fr;
-    }
+.experience-timeline{
+    margin:30px 0;
+}
+
+.timeline-item{
+    background:#1a2845;
+    padding:20px;
+    margin:15px 0;
+    border-radius:10px;
+    border-left:4px solid gold;
+}
+
+.timeline-item h4{
+    color:gold;
+    margin:0 0 10px 0;
+    font-size:1rem;
+}
+
+.timeline-item p{
+    margin:5px 0;
+    color:#ccc;
+    font-size:0.9rem;
 }
 
 footer{
@@ -699,107 +708,9 @@ Each metric has been carefully tracked and analyzed to demonstrate business acum
 
 </div>
 
-<!-- Detailed Transaction Log -->
-<h3 style="color:gold; margin-top:40px;">📋 Transaction Log Summary</h3>
-
-<div class="transaction-log">
-<h4 style="color:gold; width:100%; margin:0 0 20px 0;">Complete Transaction Breakdown (Sample of Top Performing Transactions)</h4>
-
-<div class="log-entry">
-<div class="log-entry-item">
-<div class="log-entry-label">Transaction ID</div>
-<div class="log-entry-value">TX-001</div>
-</div>
-<div class="log-entry-item">
-<div class="log-entry-label">Product</div>
-<div class="log-entry-value">Fruit Notifi</div>
-</div>
-<div class="log-entry-item">
-<div class="log-entry-label">Cost</div>
-<div class="log-entry-value">S$200</div>
-</div>
-<div class="log-entry-item">
-<div class="log-entry-label">Revenue/Profit</div>
-<div class="log-entry-value">S$2,700 / S$2,500</div>
-</div>
-</div>
-
-<div class="log-entry">
-<div class="log-entry-item">
-<div class="log-entry-label">Transaction ID</div>
-<div class="log-entry-value">TX-002-TX-015</div>
-</div>
-<div class="log-entry-item">
-<div class="log-entry-label">Product</div>
-<div class="log-entry-value">Boss Drop Items</div>
-</div>
-<div class="log-entry-item">
-<div class="log-entry-label">Cost</div>
-<div class="log-entry-value">S$50 each</div>
-</div>
-<div class="log-entry-item">
-<div class="log-entry-label">Revenue/Profit</div>
-<div class="log-entry-value">S$87.50 / S$37.50</div>
-</div>
-</div>
-
-<div class="log-entry">
-<div class="log-entry-item">
-<div class="log-entry-label">Transaction ID</div>
-<div class="log-entry-value">TX-016-TX-045</div>
-</div>
-<div class="log-entry-item">
-<div class="log-entry-label">Product</div>
-<div class="log-entry-value">Dark Blade</div>
-</div>
-<div class="log-entry-item">
-<div class="log-entry-label">Cost</div>
-<div class="log-entry-value">S$5 per unit</div>
-</div>
-<div class="log-entry-item">
-<div class="log-entry-label">Revenue/Profit</div>
-<div class="log-entry-value">S$6 / S$1</div>
-</div>
-</div>
-
-<div class="log-entry">
-<div class="log-entry-item">
-<div class="log-entry-label">Transaction ID</div>
-<div class="log-entry-value">TX-046-TX-080</div>
-</div>
-<div class="log-entry-item">
-<div class="log-entry-label">Product</div>
-<div class="log-entry-value">Fast Boats & Mixed Items</div>
-</div>
-<div class="log-entry-item">
-<div class="log-entry-label">Cost</div>
-<div class="log-entry-value">S$25 avg</div>
-</div>
-<div class="log-entry-item">
-<div class="log-entry-label">Revenue/Profit</div>
-<div class="log-entry-value">S$43.75 / S$18.75</div>
-</div>
-</div>
-
-</div>
-
-<!-- Sales Insights -->
-<div class="business-insight">
-<h4>🔍 Data-Driven Business Insights</h4>
-<ul>
-<li><strong>Consistent Profitability:</strong> All 80 transactions generated positive returns, indicating reliable business model and effective pricing strategy</li>
-<li><strong>High ROI Achievement:</strong> 128.85% ROI demonstrates exceptional capital efficiency and market opportunity identification</li>
-<li><strong>Scalability Proof:</strong> Diverse product portfolio (high-value items to low-cost items) shows ability to scale across different market segments</li>
-<li><strong>Customer Trust:</strong> 4.9★ rating from 71 reviews indicates reliability and consistent service delivery</li>
-<li><strong>Financial Management:</strong> Tracked all costs and revenues precisely, showing attention to detail and financial accountability</li>
-<li><strong>Market Intelligence:</strong> Successfully identified high-margin products and demand patterns to optimize inventory allocation</li>
-<li><strong>Reinvestment Strategy:</strong> Reinvested profits into inventory to scale business while maintaining profitability standards</li>
-</ul>
-</div>
-
-<!-- Revenue Breakdown -->
+<!-- Detailed Revenue Breakdown -->
+<h3 style="color:gold; margin-top:40px;">💹 Detailed Revenue & Cost Breakdown</h3>
 <div class="table-container">
-<h3 style="color:gold; margin-top:0;">💹 Detailed Revenue & Cost Breakdown</h3>
 <table class="analytics-table">
 <thead>
 <tr>
@@ -880,34 +791,229 @@ Each metric has been carefully tracked and analyzed to demonstrate business acum
 </table>
 </div>
 
+<!-- Sales Insights -->
+<div class="business-insight">
+<h4>🔍 Data-Driven Business Insights</h4>
+<ul>
+<li><strong>Consistent Profitability:</strong> All 80 transactions generated positive returns, indicating reliable business model and effective pricing strategy</li>
+<li><strong>High ROI Achievement:</strong> 128.85% ROI demonstrates exceptional capital efficiency and market opportunity identification</li>
+<li><strong>Scalability Proof:</strong> Diverse product portfolio (high-value items to low-cost items) shows ability to scale across different market segments</li>
+<li><strong>Customer Trust:</strong> 4.9★ rating from 71 reviews indicates reliability and consistent service delivery</li>
+<li><strong>Financial Management:</strong> Tracked all costs and revenues precisely, showing attention to detail and financial accountability</li>
+<li><strong>Market Intelligence:</strong> Successfully identified high-margin products and demand patterns to optimize inventory allocation</li>
+<li><strong>Reinvestment Strategy:</strong> Reinvested profits into inventory to scale business while maintaining profitability standards</li>
+</ul>
+</div>
+
 </section>
 
 <section id="leadership">
-<h2>Leadership</h2>
+<h2>🎓 Leadership & Responsibility</h2>
+
 <div class="card">
-Subject Representative for Chemistry and Design & Technology over 4 years.
-Developed responsibility, communication, and leadership skills.
+<h3 style="color:gold; margin-top:0;">Subject Representative (4 Years)</h3>
+<p>
+Served as Subject Representative for Chemistry and Design & Technology across 4 consecutive years, demonstrating long-term commitment and consistent leadership. 
+This role provided extensive experience in communication, organization, and stakeholder management.
+</p>
 </div>
+
+<h3 style="color:gold; margin-top:30px;">📚 Key Leadership Skills Developed</h3>
+<div class="skills-grid">
+<div class="skill-item">
+<h4>Communication</h4>
+<p>Effectively communicated student concerns and feedback to teachers, translating between student body and faculty perspectives.</p>
+</div>
+<div class="skill-item">
+<h4>Responsibility</h4>
+<p>Managed class-wide tasks and initiatives, ensuring accountability and follow-through on commitments.</p>
+</div>
+<div class="skill-item">
+<h4>Organization</h4>
+<p>Coordinated class events, subject-related activities, and logistical planning for smooth execution.</p>
+</div>
+<div class="skill-item">
+<h4>Problem-Solving</h4>
+<p>Resolved conflicts and addressed challenges by finding collaborative solutions beneficial to all parties.</p>
+</div>
+<div class="skill-item">
+<h4>Initiative</h4>
+<p>Took charge of improving class welfare and morale through proactive engagement and suggestions.</p>
+</div>
+<div class="skill-item">
+<h4>Mentorship</h4>
+<p>Guided fellow students and provided support in both academic and personal challenges.</p>
+</div>
+</div>
+
+<div class="business-insight">
+<h4>💡 Leadership Impact</h4>
+<ul>
+<li><strong>4-Year Tenure:</strong> Demonstrated commitment, reliability, and sustained excellence in leadership</li>
+<li><strong>Multi-Subject Experience:</strong> Successfully balanced responsibilities across Chemistry and Design & Technology</li>
+<li><strong>Trust & Influence:</strong> Built strong relationships with both peers and teachers through integrity and competence</li>
+<li><strong>Continuous Growth:</strong> Improved leadership effectiveness each year through reflection and adaptation</li>
+</ul>
+</div>
+
 </section>
 
 <section id="cca">
-<h2>CCA - Chinese Ensemble</h2>
+<h2>🥁 Chinese Ensemble - Percussion</h2>
+
 <div class="card">
-SYF Distinction recipient. Performed in school events such as Chinese New Year
-and other school performances.
+<h3 style="color:gold; margin-top:0;">Passion for Drumming & Musical Excellence</h3>
+<p>
+Pursued my passion for drumming through the Chinese Ensemble CCA, where I developed comprehensive musical and technical skills. 
+This journey culminated in achieving a Singapore Youth Festival (SYF) Distinction award, validating years of dedicated practice and musical growth.
+</p>
 </div>
+
+<h3 style="color:gold; margin-top:30px;">🎵 Skills & Achievements in Percussion</h3>
+<div class="skills-grid">
+<div class="skill-item">
+<h4>Technical Proficiency</h4>
+<p>Mastered multiple percussion instruments including drums, cymbals, and gongs. Developed advanced timing, rhythm control, and instrumental techniques.</p>
+</div>
+<div class="skill-item">
+<h4>Ensemble Performance</h4>
+<p>Performed complex percussion arrangements in ensemble settings, synchronizing with other musicians and adapting to dynamic performance requirements.</p>
+</div>
+<div class="skill-item">
+<h4>Musical Interpretation</h4>
+<p>Developed ability to understand and interpret musical scores, bringing emotional depth and cultural understanding to traditional Chinese music.</p>
+</div>
+<div class="skill-item">
+<h4>Discipline & Dedication</h4>
+<p>Committed to consistent practice routines and continuous improvement, balancing CCA demands with academic responsibilities.</p>
+</div>
+<div class="skill-item">
+<h4>Collaborative Excellence</h4>
+<p>Worked harmoniously with ensemble members, providing support and contributing to collective musical cohesion.</p>
+</div>
+<div class="skill-item">
+<h4>Performance Under Pressure</h4>
+<p>Delivered high-quality performances during school events and festival competitions, maintaining composure and technical excellence in high-pressure situations.</p>
+</div>
+</div>
+
+<h3 style="color:gold; margin-top:30px;">🏆 Performance Highlights</h3>
+<div class="experience-timeline">
+
+<div class="timeline-item">
+<h4>Singapore Youth Festival (SYF) 2025 - Distinction Award</h4>
+<p><strong>Achievement:</strong> Awarded Certificate of Distinction in percussion category</p>
+<p><strong>Recognition:</strong> Validated technical excellence and musical interpretation at national youth arts competition</p>
+<p><strong>Impact:</strong> Achieved highest recognition level, demonstrating mastery of drumming and ensemble performance</p>
+</div>
+
+<div class="timeline-item">
+<h4>School Performance Events & Assemblies</h4>
+<p><strong>Events:</strong> Chinese New Year celebrations, school concerts, cultural performances</p>
+<p><strong>Responsibilities:</strong> Led percussion sections, performed solo features, and mentored junior ensemble members</p>
+<p><strong>Audience Engagement:</strong> Connected with audiences through dynamic and culturally authentic performances</p>
+</div>
+
+<div class="timeline-item">
+<h4>Ensemble Leadership & Mentorship</h4>
+<p><strong>Development:</strong> Progressed from solo performer to ensemble leader over multiple years</p>
+<p><strong>Mentorship:</strong> Guided newer members in percussion techniques and ensemble coordination</p>
+<p><strong>Contribution:</strong> Elevated overall ensemble quality through technical excellence and collaborative spirit</p>
+</div>
+
+</div>
+
+<div class="business-insight">
+<h4>💡 Musical Excellence & Personal Growth</h4>
+<ul>
+<li><strong>Passion Pursuit:</strong> Dedicated myself to developing deep expertise in drumming and percussion performance</li>
+<li><strong>Excellence Recognition:</strong> SYF Distinction award validates years of practice and artistic achievement</li>
+<li><strong>Discipline Development:</strong> Learned time management, persistence, and the importance of consistent practice</li>
+<li><strong>Cultural Understanding:</strong> Gained appreciation for Chinese musical traditions and cultural heritage</li>
+<li><strong>Team Player Mindset:</strong> Experienced the value of collaboration and supporting fellow performers</li>
+<li><strong>Performance Confidence:</strong> Built confidence performing in front of diverse audiences in various settings</li>
+</ul>
+</div>
+
 </section>
 
 <section id="service">
-<h2>Community Service</h2>
+<h2>🤝 Community Service & Social Responsibility</h2>
+
 <div class="card">
-Over 50 VIA hours including:
+<h3 style="color:gold; margin-top:0;">Over 50 VIA Hours - Making a Difference</h3>
+<p>
+Committed to community service through various volunteering initiatives, accumulating over 50 VIA (Values in Action) hours. 
+Through these experiences, I developed empathy, social awareness, and a deep understanding of the importance of giving back to society.
+</p>
+</div>
+
+<h3 style="color:gold; margin-top:30px;">📍 Community Service Initiatives</h3>
+<div class="experience-timeline">
+
+<div class="timeline-item">
+<h4>Old Folks Home Performances & Engagement</h4>
+<p><strong>Activity:</strong> Performed percussion pieces and Chinese musical performances for elderly residents</p>
+<p><strong>Impact:</strong> Brought joy, entertainment, and cultural enrichment to senior community members</p>
+<p><strong>Skills Developed:</strong> Empathy, sensitivity to aging population, and understanding of intergenerational connection</p>
+</div>
+
+<div class="timeline-item">
+<h4>Organizing Activities for Elderly</h4>
+<p><strong>Responsibilities:</strong> Coordinated games, exercise sessions, and interactive programs for elderly participants</p>
+<p><strong>Achievement:</strong> Facilitated meaningful social engagement and improved well-being for seniors</p>
+<p><strong>Learning:</strong> Developed organizational and interpersonal skills through activity planning and execution</p>
+</div>
+
+<div class="timeline-item">
+<h4>School VIA Events & Programs</h4>
+<p><strong>Participation:</strong> Actively involved in school-wide volunteer initiatives and charity drives</p>
+<p><strong>Contributions:</strong> Helped organize fundraisers, community clean-up events, and social awareness campaigns</p>
+<p><strong>Outcome:</strong> Demonstrated commitment to school community and social responsibility values</p>
+</div>
+
+</div>
+
+<h3 style="color:gold; margin-top:30px;">🌟 Community Service Skills & Values</h3>
+<div class="skills-grid">
+<div class="skill-item">
+<h4>Empathy & Compassion</h4>
+<p>Developed genuine concern for vulnerable populations and understanding of diverse life experiences and challenges.</p>
+</div>
+<div class="skill-item">
+<h4>Social Awareness</h4>
+<p>Gained perspective on social issues and the importance of community support systems for underprivileged groups.</p>
+</div>
+<div class="skill-item">
+<h4>Active Listening</h4>
+<p>Learned to listen carefully to seniors' stories and needs, providing attentive and respectful engagement.</p>
+</div>
+<div class="skill-item">
+<h4>Adaptability</h4>
+<p>Adjusted communication and approach based on elderly residents' capabilities and preferences.</p>
+</div>
+<div class="skill-item">
+<h4>Teamwork</h4>
+<p>Collaborated effectively with fellow volunteers and organizers to ensure smooth program execution.</p>
+</div>
+<div class="skill-item">
+<h4>Service Mindset</h4>
+<p>Cultivated genuine desire to serve others and contribute positively to community well-being.</p>
+</div>
+</div>
+
+<div class="business-insight">
+<h4>💡 Impact & Personal Growth Through Service</h4>
 <ul>
-<li>Old folks home performances</li>
-<li>Organising activities for elderly</li>
-<li>School VIA events</li>
+<li><strong>50+ VIA Hours:</strong> Demonstrated sustained commitment to community service over extended period</li>
+<li><strong>Diverse Initiatives:</strong> Participated in multiple types of service, showing versatility and genuine care</li>
+<li><strong>Character Building:</strong> Service experiences shaped values, empathy, and social consciousness</li>
+<li><strong>Leadership Through Service:</strong> Took initiative in organizing and leading community activities</li>
+<li><strong>Life Perspective:</strong> Gained understanding of privilege, gratitude, and responsibility to society</li>
+<li><strong>Meaningful Connections:</strong> Built relationships with elderly community members, understanding their stories and wisdom</li>
 </ul>
 </div>
+
 </section>
 
 <section id="achievements">
