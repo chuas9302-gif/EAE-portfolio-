@@ -26,6 +26,7 @@ nav{
     gap:20px;
     backdrop-filter:blur(10px);
     z-index:100;
+    flex-wrap:wrap;
 }
 
 nav a{
@@ -148,6 +149,92 @@ h2{
     color:#bbb;
 }
 
+/* Business Analytics Styles */
+.business-metrics{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    margin:30px 0;
+}
+
+.metric-card{
+    background:#1a2845;
+    padding:25px;
+    border-radius:12px;
+    border-left:4px solid gold;
+    text-align:center;
+}
+
+.metric-card h3{
+    color:gold;
+    margin:0 0 10px 0;
+    font-size:0.9rem;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.metric-card .value{
+    color:#fff;
+    font-size:2rem;
+    font-weight:700;
+    margin:10px 0;
+}
+
+.metric-card .currency{
+    font-size:1.2rem;
+    color:gold;
+}
+
+.table-container{
+    overflow-x:auto;
+    margin:30px 0;
+    background:#121a2e;
+    border-radius:12px;
+    padding:20px;
+}
+
+.analytics-table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:0.9rem;
+}
+
+.analytics-table th{
+    background:#1a2845;
+    color:gold;
+    padding:15px;
+    text-align:left;
+    border-bottom:2px solid gold;
+}
+
+.analytics-table td{
+    padding:12px 15px;
+    border-bottom:1px solid #1a2845;
+}
+
+.analytics-table tr:hover{
+    background:#1a2845;
+}
+
+.analytics-table tbody tr:last-child td{
+    border-bottom:2px solid gold;
+    font-weight:700;
+    background:#0d1419;
+}
+
+.business-insight{
+    background:#1a2845;
+    border-left:4px solid gold;
+    padding:20px;
+    margin:20px 0;
+    border-radius:8px;
+}
+
+.business-insight h4{
+    color:gold;
+    margin-top:0;
+}
+
 footer{
     text-align:center;
     padding:30px;
@@ -162,6 +249,7 @@ footer{
 <a href="#about">About</a>
 <a href="#stats">Stats</a>
 <a href="#business">Business</a>
+<a href="#business-deals">Carousel Deals</a>
 <a href="#leadership">Leadership</a>
 <a href="#cca">CCA</a>
 <a href="#service">Service</a>
@@ -218,6 +306,125 @@ numbers, and financial systems. I enjoy analysing problems and understanding how
 Managed a Carousell business handling listings, customers, and transactions.
 Built financial awareness and responsibility through real-world experience.
 </div>
+</section>
+
+<section id="business-deals">
+<h2>📊 Blox Fruit Business Analytics</h2>
+
+<div class="card">
+<h3 style="color:gold; margin-top:0;">Business Model Overview</h3>
+<p>
+Through strategic trading on Carousell, I developed a sustainable business model by purchasing Blox Fruit game passes, 
+trading them for rare in-game fruits, and reselling them at a premium. This taught me key entrepreneurial lessons in 
+inventory management, market dynamics, pricing strategy, and profit optimization.
+</p>
+</div>
+
+<!-- Key Metrics -->
+<div class="business-metrics">
+<div class="metric-card">
+<h3>Total Investment</h3>
+<div class="value"><span class="currency">S$</span>305</div>
+</div>
+
+<div class="metric-card">
+<h3>Total Revenue</h3>
+<div class="value"><span class="currency">S$</span>698</div>
+</div>
+
+<div class="metric-card">
+<h3>Net Profit</h3>
+<div class="value"><span class="currency">S$</span>393</div>
+</div>
+
+<div class="metric-card">
+<h3>ROI</h3>
+<div class="value">128.85<span style="font-size:1.2rem;">%</span></div>
+</div>
+</div>
+
+<!-- Business Insights -->
+<div class="business-insight">
+<h4>💡 Key Business Insights</h4>
+<ul>
+<li><strong>Profitability:</strong> Achieved 128.85% ROI over 80 transactions, demonstrating effective pricing strategy and market understanding</li>
+<li><strong>Consistency:</strong> Maintained profitability across diverse game items, showing scalable business model</li>
+<li><strong>Risk Management:</strong> Balanced high-margin items against consistent sellers to optimize portfolio</li>
+<li><strong>Market Knowledge:</strong> Understood demand patterns and pricing fluctuations to maximize returns</li>
+</ul>
+</div>
+
+<!-- Detailed Transaction Analytics -->
+<div class="table-container">
+<h3 style="color:gold; margin-top:0;">Transaction Summary</h3>
+<table class="analytics-table">
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Total Transactions</strong></td>
+<td>80</td>
+<td>Completed sales across multiple items</td>
+</tr>
+<tr>
+<td><strong>Total Cost</strong></td>
+<td>S$305</td>
+<td>Cumulative investment in inventory</td>
+</tr>
+<tr>
+<td><strong>Total Revenue</strong></td>
+<td>S$698</td>
+<td>Total income from all sales</td>
+</tr>
+<tr>
+<td><strong>Gross Profit</strong></td>
+<td>S$393</td>
+<td>Net gain after costs</td>
+</tr>
+<tr>
+<td><strong>Average Profit per Transaction</strong></td>
+<td>S$4.91</td>
+<td>Consistent revenue generation</td>
+</tr>
+<tr>
+<td><strong>ROI Percentage</strong></td>
+<td>128.85%</td>
+<td>Return on initial investment</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- Top Performing Items -->
+<div class="business-insight">
+<h4>🎯 Best Performing Items</h4>
+<p><strong>Highest Margin Products:</strong></p>
+<ul>
+<li><strong>Fruit Notifi:</strong> S$2,700 cost → Consistent 13.5x multiplier on resale value</li>
+<li><strong>Boss Drop Items:</strong> S$350 cost → Steady 1.75x resale multiplier</li>
+<li><strong>Dark Blade:</strong> S$1,200 cost → Reliable S$6 sell price per unit</li>
+<li><strong>Fast Boats:</strong> S$350 cost → Strong 1.75x profit multiplier</li>
+</ul>
+</div>
+
+<!-- Learning Outcomes -->
+<div class="card">
+<h3 style="color:gold; margin-top:0;">📚 Entrepreneurial Skills Developed</h3>
+<ul>
+<li><strong>Financial Analysis:</strong> Tracked costs, revenue, and ROI to measure business performance</li>
+<li><strong>Inventory Management:</strong> Maintained diverse product portfolio to optimize sales</li>
+<li><strong>Pricing Strategy:</strong> Analyzed market demand and set competitive prices</li>
+<li><strong>Customer Service:</strong> Built reputation as reliable seller on Carousell (71 reviews, 4.9★ rating)</li>
+<li><strong>Risk Mitigation:</strong> Diversified product range to minimize losses on slow-moving items</li>
+<li><strong>Business Sustainability:</strong> Reinvested profits into inventory to scale operations</li>
+</ul>
+</div>
+
 </section>
 
 <section id="leadership">
