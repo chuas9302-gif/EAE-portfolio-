@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EAE Portfolio - Accountancy</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    font-family:Poppins;
+    background:#0b1220;
+    color:#eaeaea;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(0,0,0,0.6);
+    padding:12px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    backdrop-filter:blur(10px);
+    z-index:100;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:13px;
+    transition: color 0.3s;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:radial-gradient(circle at top, #1c2f55, #0b1220);
+    padding:20px;
+}
+
+.hero img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    border:3px solid gold;
+}
+
+.hero h1{
+    font-size:2.5rem;
+    margin-top:15px;
+}
+
+.badge{
+    display:inline-block;
+    margin-top:10px;
+    padding:6px 12px;
+    border:1px solid gold;
+    color:gold;
+    border-radius:20px;
+    font-size:12px;
+}
+
+section{
+    padding:80px 12%;
+}
+
+h2{
+    color:gold;
+    margin-bottom:20px;
+}
+
+.card{
+    background:#121a2e;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:15px;
+    line-height:1.6;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+}
+
+.stat{
+    text-align:center;
+    padding:20px;
+    background:#121a2e;
+    border-radius:12px;
+}
+
+.stat h1{
+    color:gold;
+    font-size:2rem;
+    margin:10px 0;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#888;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#about">About</a>
+<a href="#stats">Stats</a>
+<a href="#business">Business</a>
+<a href="#leadership">Leadership</a>
+<a href="#cca">CCA</a>
+<a href="#service">Service</a>
+</nav>
+
+<div class="hero">
+<div>
+<img src="profile.jpg" alt="Profile Photo">
+<h1>Chua Cheng Yi Shane</h1>
+<p>Accountancy / Banking & Finance Applicant</p>
+<div class="badge">EAE Portfolio</div>
+</div>
+</div>
+
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+I am an aspiring Accountancy and Banking & Finance student with strong interest in business,
+numbers, and financial systems. I enjoy analysing problems and understanding how businesses operate.
+</div>
+</section>
+
+<section id="stats">
+<h2>Achievements</h2>
+<div class="grid">
+
+<div class="stat">
+<h1>4</h1>
+<p>Years Subject Rep</p>
+</div>
+
+<div class="stat">
+<h1>50+</h1>
+<p>VIA Hours</p>
+</div>
+
+<div class="stat">
+<h1>SYF</h1>
+<p>Distinction</p>
+</div>
+
+<div class="stat">
+<h1>1</h1>
+<p>Carousell Business</p>
+</div>
+
+</div>
+</section>
+
+<section id="business">
+<h2>Entrepreneurship</h2>
+<div class="card">
+Managed a Carousell business handling listings, customers, and transactions.
+Built financial awareness and responsibility through real-world experience.
+</div>
+</section>
+
+<section id="leadership">
+<h2>Leadership</h2>
+<div class="card">
+Subject Representative for Chemistry and Design & Technology over 4 years.
+Developed responsibility, communication, and leadership skills.
+</div>
+</section>
+
+<section id="cca">
+<h2>CCA - Chinese Ensemble</h2>
+<div class="card">
+SYF Distinction recipient. Performed in school events such as Chinese New Year
+and other school performances.
+</div>
+</section>
+
+<section id="service">
+<h2>Community Service</h2>
+<div class="card">
+Over 50 VIA hours including:
+<ul>
+<li>Old folks home performances</li>
+<li>Organising activities for elderly</li>
+<li>School VIA events</li>
+</ul>
+</div>
+</section>
+
+<footer>
+© 2026 EAE Portfolio | Accountancy / Banking & Finance
+</footer>
+
+</body>
+</html>
