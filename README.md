@@ -32,7 +32,7 @@ This portfolio showcases:
 **Category:** Chinese Ensemble - Percussion  
 **Significance:** Recognized for excellence in percussion performance during the Singapore Youth Festival
 
-![SYF Distinction Certificate](./images/syf-distinction-2025.jpg)
+![SYF Distinction Certificate](./IMG_1871.jpeg)
 
 ---
 
@@ -42,5 +42,5 @@ This portfolio showcases:
 **School:** Mayflower Secondary School  
 **Recognition:** Awarded for significant academic and personal improvement during Term 1, 2026
 
-![Most Improved Student Award](./images/most-improved-award-2026.jpg)
+![Most Improved Student Award](./IMG_1872.jpeg)
 
