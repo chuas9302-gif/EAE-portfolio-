@@ -26,9 +26,21 @@ This portfolio showcases:
 
 ### Proof of Recognition
 
-Below are photos showcasing my key achievements and awards:
+#### 🏆 Singapore Youth Festival (SYF) 2025 - Certificate of Distinction
+**Award:** Certificate of Distinction in Chinese Ensemble Percussion  
+**Event:** SYF 2025 Arts Presentation  
+**Category:** Chinese Ensemble - Percussion  
+**Significance:** Recognized for excellence in percussion performance during the Singapore Youth Festival
 
-![Achievement 1](./images/achievement-1.jpg)
-![Achievement 2](./images/achievement-2.jpg)
+![SYF Distinction Certificate](./images/syf-distinction-2025.jpg)
 
-*Add detailed descriptions of each achievement above the images on your portfolio website.*
+---
+
+#### 🥇 2026 Student Award - Most Improved
+**Award:** Term 1 Most Improved Student  
+**Class:** S4-J  
+**School:** Mayflower Secondary School  
+**Recognition:** Awarded for significant academic and personal improvement during Term 1, 2026
+
+![Most Improved Student Award](./images/most-improved-award-2026.jpg)
+
